@@ -1,14 +1,16 @@
 import NavBar from "./Nav";
 import { Hero } from "./Hero";
-import FetchData from "./FetchData";
+// import Leaderboard from "./Leaderboard";
+import LeaderBoard from "./LeaderBoard";
 
 function App(){
   return <div>
     <NavBar />
     <Hero />
+    <LeaderBoard />
   
 
-    <FetchData />
+    
   </div>
 }
 
