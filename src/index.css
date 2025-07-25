@@ -7,8 +7,6 @@
 
     } */
 
-    tr:nth-child(-n+3){
-        @theme{
-            --background:yellow !important;
-        }
+    tr{
+        --background:yellow !important;
     }
