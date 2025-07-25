@@ -13,10 +13,6 @@ export const NavBar = () => {
             <div className="md:static absolute bg-red-950 md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <button className="bg-red-800 py-2 text-blue rounded-full px-5 hover:bg-red-400 hover:text-white" onClick={()=>setOpen(true)}>FAQ's</button>
             </div>
-            <div className="flex items-center gap-6">
-                <button className="bg-red-800 text-blue px-5 py-2 rounded-full hover:bg-red-400 hover:text-white">Register</button>
-                <i className="fa-solid fa-bars text-3xl cursor-pointer md:invisible"></i>
-            </div>
         </nav>
         <Modal open={open} onClose={()=> setOpen(false)}>
                 <div className='absolute w-[400px] bg-white rounded-[6px] top-[50%] left-[50%] translate-[-50%]'>
@@ -42,9 +38,9 @@ export const NavBar = () => {
                     text-gray-400 bg-white hover:bg-gray-50 
                     hover:text-gray-600'>
                         <i className="fa-solid fa-xmark"></i>
-                </button>
+                    </button>
                 </div>
-        </Modal>
+            </Modal >
     </header>
     
   )
