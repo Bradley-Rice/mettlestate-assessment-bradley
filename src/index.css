@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+    /* @theme{
+        tr:nth-child(-n +3){
+            backgroundcolor:yellow;
+        }
+
+    } */
+
+    tr:nth-child(-n+3){
+        @theme{
+            --background:yellow !important;
+        }
+    }

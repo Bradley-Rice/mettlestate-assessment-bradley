@@ -9,28 +9,28 @@ const LeaderBoard = () => {
         .catch(err => console.log(err));
     },[])
   return (
-    <div className="flex justify-center items-center">
-            <table className="shadow-2xl font-[Poppins] border-yellow-300 w-6/12">
+    <div className="flex justify-center items-center p-3.5">
+            <table id='leaderBoard' className="shadow-2xl font-[Poppins] rounded-[15px] w-6/12 bg-red-600">
                 <thead className="text-white">
-                    <tr>
-                        <th className="py-3 bg-cyan-800">Position.</th>
-                        <th className="py-3 bg-cyan-800">Gamer Tag.</th>
-                        <th className="py-3 bg-cyan-800">Points</th>
-                    </tr>
+                <tr>
+                    <th className="p-3 ">Position.</th>
+                    <th className="p-3 ">Gamer Tag.</th>
+                    <th className="p-3 ">Points</th>
+                </tr>
                 </thead>
                 <tbody className="text-cyan-900 text-center">
                     {
-                        data.map((user, index) => { 
-                            return <tr key={index} className="bg-cyan-200 cursor-pointer duration-300">
-                                <td className="py-3 px-6">{user.id}</td>
-                                <td className="py-3 px-6">{user.username}</td>
-                                <td>{1100 - user.id * 100}</td>
-                            </tr>
-                        })
+                    data.map((user, index) => { 
+                        return <tr key={index} className=" cursor-pointer duration-300">
+                            <td className="py-3 px-6 text-black">{user.id}</td>
+                            <td className="py-3 px-6 text-black">{user.username}</td>
+                            <td className="py-3 px-6 text-black">{1100 - user.id * 100}</td>
+                        </tr>
+                    })
                     }
                 </tbody>
             </table>
-        </div>
+    </div>
 
   )
 }
