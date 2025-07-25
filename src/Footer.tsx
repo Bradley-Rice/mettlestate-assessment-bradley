@@ -5,7 +5,7 @@ export const Footer = () => {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <footer className="w-[100vw] bottom-0 bg-white p-1">
+      <footer className="w-[100vw] bottom-0 bg-gradient-to-t from-[#c91e1e] to-[#260404] p-1">
         <div className="w-[100%] flex">
           <div className="w-3/12">
             <img
